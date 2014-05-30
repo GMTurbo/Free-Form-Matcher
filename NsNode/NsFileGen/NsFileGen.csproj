@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8556E4BC-CD2F-4502-9DBE-4C4D7D039B61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NsFileGen</RootNamespace>
+    <AssemblyName>NsFileGen</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="devDept.EyeshotProfessional, Version=3.0.568.0, Culture=neutral, PublicKeyToken=06eaf3c8ff58eeb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\devDept Software\Eyeshot Professional 3.0 Retail\Bin\devDept.EyeshotProfessional.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContourMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContourMaker.Designer.cs">
+      <DependentUpon>ContourMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContourNode.cs" />
+    <Compile Include="ContourTracker.cs" />
+    <Compile Include="LayoutIO.cs" />
+    <Compile Include="PassNode.cs" />
+    <Compile Include="PassList.cs" />
+    <Compile Include="PointTracker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RbfSurface.cs" />
+    <Compile Include="YarnDoc.cs" />
+    <Compile Include="YarnViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnViewer.Designer.cs">
+      <DependentUpon>YarnViewer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NsNodeControls\NsNodeControls.csproj">
+      <Project>{40A37F5D-0598-4E26-A094-3962D1BB78E3}</Project>
+      <Name>NsNodeControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NsNodeIO\NsNodeIO.csproj">
+      <Project>{4739BE3A-7628-4D79-BBB2-A8E7D99AF9E5}</Project>
+      <Name>NsNodeIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NsNode\NsNode.csproj">
+      <Project>{F71434A5-1743-46D7-91EF-28D682CF8F81}</Project>
+      <Name>NsNode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContourMaker.resx">
+      <DependentUpon>ContourMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnViewer.resx">
+      <DependentUpon>YarnViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

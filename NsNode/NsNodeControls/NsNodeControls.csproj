@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40A37F5D-0598-4E26-A094-3962D1BB78E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NsNodeControls</RootNamespace>
+    <AssemblyName>NsNodeControls</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPlot, Version=0.9.10.0, Culture=neutral, PublicKeyToken=4eda430eb4395eb1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3DLBuildAlpha\Debug\NPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AttributeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeEditor.Designer.cs">
+      <DependentUpon>AttributeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorScale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorScale.Designer.cs">
+      <DependentUpon>ColorScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileComparer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileComparer.Designer.cs">
+      <DependentUpon>FileComparer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogTextBox.Designer.cs">
+      <DependentUpon>LogTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NodeLoadedEventArgs.cs" />
+    <Compile Include="MessageDropDownBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageDropDownBox.Designer.cs">
+      <DependentUpon>MessageDropDownBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsAttributeGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NsAttributeGridView.Designer.cs">
+      <DependentUpon>NsAttributeGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridComboBoxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridNumericColumn.cs">
+    </Compile>
+    <Compile Include="DateAttributeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DateAttributeEditor.Designer.cs">
+      <DependentUpon>DateAttributeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileTextBox.Designer.cs">
+      <DependentUpon>FileTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IAttributeEditor.cs" />
+    <Compile Include="LabelTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelTextbox.Designer.cs">
+      <DependentUpon>LabelTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageCheckListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageCheckListBox.Designer.cs">
+      <DependentUpon>MessageCheckListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTxtBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageTxtBox.designer.cs">
+      <DependentUpon>MessageTxtBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsNodeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NsNodeEditor.Designer.cs">
+      <DependentUpon>NsNodeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsNodeFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NsNodeFlow.Designer.cs">
+      <DependentUpon>NsNodeFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsNodeGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NsNodeGridView.Designer.cs">
+      <DependentUpon>NsNodeGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsNodePlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NsNodePlot.Designer.cs">
+      <DependentUpon>NsNodePlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NsNodeTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NsNodeTree.Designer.cs">
+      <DependentUpon>NsNodeTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PointBox.Designer.cs">
+      <DependentUpon>PointBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointBoxIncrementor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PointBoxIncrementor.Designer.cs">
+      <DependentUpon>PointBoxIncrementor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PointList.Designer.cs">
+      <DependentUpon>PointList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryView.Designer.cs">
+      <DependentUpon>QueryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValueBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ValueBox.Designer.cs">
+      <DependentUpon>ValueBox.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AttributeEditor.resx">
+      <DependentUpon>AttributeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorScale.resx">
+      <DependentUpon>ColorScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileComparer.resx">
+      <DependentUpon>FileComparer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogTextBox.resx">
+      <DependentUpon>LogTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageDropDownBox.resx">
+      <DependentUpon>MessageDropDownBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NsAttributeGridView.resx">
+      <DependentUpon>NsAttributeGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateAttributeEditor.resx">
+      <DependentUpon>DateAttributeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileTextBox.resx">
+      <DependentUpon>FileTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelTextbox.resx">
+      <DependentUpon>LabelTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageCheckListBox.resx">
+      <DependentUpon>MessageCheckListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageTxtBox.resx">
+      <DependentUpon>MessageTxtBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NsNodeEditor.resx">
+      <DependentUpon>NsNodeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NsNodeFlow.resx">
+      <DependentUpon>NsNodeFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NsNodeGridView.resx">
+      <DependentUpon>NsNodeGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NsNodePlot.resx">
+      <DependentUpon>NsNodePlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NsNodeTree.resx">
+      <DependentUpon>NsNodeTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointBox.resx">
+      <DependentUpon>PointBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointBoxIncrementor.resx">
+      <DependentUpon>PointBoxIncrementor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointList.resx">
+      <DependentUpon>PointList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryView.resx">
+      <DependentUpon>QueryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValueBox.resx">
+      <DependentUpon>ValueBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NsNodeIO\NsNodeIO.csproj">
+      <Project>{4739BE3A-7628-4D79-BBB2-A8E7D99AF9E5}</Project>
+      <Name>NsNodeIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NsNode\NsNode.csproj">
+      <Project>{F71434A5-1743-46D7-91EF-28D682CF8F81}</Project>
+      <Name>NsNode</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

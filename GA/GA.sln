@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBF", "..\RBF\RBF.csproj", "{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F71434A5-1743-46D7-91EF-28D682CF8F81} = {F71434A5-1743-46D7-91EF-28D682CF8F81}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsNode", "..\NsNode\NsNode\NsNode.csproj", "{F71434A5-1743-46D7-91EF-28D682CF8F81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticAlgo", "GeneticAlgo\GeneticAlgo.csproj", "{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = GA.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Debug|x64.ActiveCfg = Debug|x64
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Debug|x64.Build.0 = Debug|x64
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Release|x64.ActiveCfg = Release|x64
+		{F65D2DA2-4A1E-4D05-9619-707BC41F2AF1}.Release|x64.Build.0 = Release|x64
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Debug|x64.ActiveCfg = Debug|x64
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Debug|x64.Build.0 = Debug|x64
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Release|x64.ActiveCfg = Release|x64
+		{F71434A5-1743-46D7-91EF-28D682CF8F81}.Release|x64.Build.0 = Release|x64
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Debug|x64.ActiveCfg = Debug|x64
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Debug|x64.Build.0 = Debug|x64
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Release|x64.ActiveCfg = Release|x64
+		{25714A7C-77E7-4A8D-91E0-82B8B7BD724E}.Release|x64.Build.0 = Release|x64
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Debug|x64.ActiveCfg = Debug|x64
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Debug|x64.Build.0 = Debug|x64
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Release|x64.ActiveCfg = Release|x64
+		{F68FECCD-CCFF-4EB4-AD56-5E41B596D56A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal
